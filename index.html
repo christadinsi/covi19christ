@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand bg-success p-2" href="#">COVID-19 INFO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-2">
+            <li class="nav-item mr-2 active">
+              <a class="nav-link text-white text-uppercase" href="#">Accueil</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link text-white text-uppercase" href="#">Articles</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a href="#" class="nav-link text-white text-uppercase">Jeu</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a href="#" class="nav-link text-white text-uppercase">Statistiques</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a href="#" class="nav-link text-white text-uppercase">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <form class="form-inline ">
+                    <div class="input-group input-group-sm mt-1">
+                        <input type="text" class="form-control bg-secondary text-white border-0" placeholder="Rechercher" aria-label="Rechercher" aria-describedby="button-search">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                </form>
+            </li>
+          </ul>
+          <div class="help-covid d-flex align-items-center">
+              <div class="cloche mr-2 font-size-2">
+                  <!-- <i class="fa fa-bell-o text-danger" aria-hidden="true"></i> -->
+                  <i class="far fa-bell text-danger"></i>
+              </div>
+                <a class="contact-phone btn btn-success p-2 rounded-0" href="tel:1410">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                      Appeler le 1410
+                  </span>
+                </a>
+          </div>
+        </div>
+      </nav>
+
+    <header class="container mt-4 mb-3 d-flex justify-content-between">
+        <div class="banner-info w-75">
+            <div class="card mb-3 border-left-0 border-right-0">
+                <iframe class="card-img-top" height="400px" src="https://www.youtube.com/embed/ozvrHrjhW0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                    <div class="card-title d-flex justify-content-between align-items-end">
+                      <h2 class="font-weight-bold">Coronavirus: 2 nouveaux cas au Gabon !</h2>
+                      <p class="small text-secondary">
+                          <span>101 vues</span>
+                          <span>25, mars 2018</span>
+                      </p>
+                    </div>
+                  <div class="card-text d-flex justify-content-between">
+                    <div class="banner-icons">
+                        <i class="fab fa-facebook mr-2 text-primary font-size-md"></i>
+                        <i class="fab fa-whatsapp mr-2 font-size-md text-success"></i>
+                        <i class="fa fa-share-alt font-size-md" aria-hidden="true"></i>
+                    </div>
+                    <div class="banner-valuation font-weight-bold">
+                        <span>25 <i class="fas fa-share-square"></i></span>
+                        <span>115 likes</span>
+                        <span><i class="far fa-heart"></i></span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- D'autres info -->
+            <div class="banner-footer d-flex border-bottom p-1">
+
+                <div class="w-50 d-flex border-right">
+                    <div class="col-md-6">
+                        <img src="assets/img/img01.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="h6 font-weight-bold">Fermeture des frontières</h2>
+                        <p class="small">433 gabonais bloqués dans 17 pays à travers le monde</p>
+                        <time class="small">Il y a 3 jours</time>
+                        <p class="text-right">
+                            120 <i class="far fa-heart"></i></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-50 d-flex border-right">
+                    <div class="col-md-6">
+                        <img src="assets/img/Covid-19-test.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="h6 font-weight-bold">Covid-19</h2>
+                        <p class="small">3 nouveaux cas et un malade guéri (officiel</p>
+                        <time class="small">Il y a 3 jours</time>
+                        <p class="text-right">
+                            120 <i class="far fa-heart"></i></i>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Pour les statistiques -->
+        <div class="banner-stats w-25 ml-3">
+            <h3 class="h6 text-center text-danger font-weight-bold border py-2 rounded">Statistique COVID-19 au Gabon</h3>
+            <div class="bg-gray p-2 rounded-lg">
+                <div class="banner-stats-content mb-1">
+                    <div class="d-flex justify-content-center">
+                        <div class="box rounded font-weight-bold m-1 color">
+                            <p class="h2 text-center">16</p>
+                            <p class="small ">Contamine</p>
+                        </div>
+                        <div class="box rounded font-weight-bold m-1 bg-danger">
+                            <p class="h2 text-center">1</p>
+                            <p class="small">Mort</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="box rounded font-weight-bold m-1 bg-success">
+                            <p class="h2 text-center">0</p>
+                            <p class="small">Gueris</p>
+                        </div>
+                        <div class="box rounded font-weight-bold m-1 bg-primary">
+                            <p class="h2 text-center">30</p>
+                            <p class="small">Cas Contactes</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary active text-white w-100" href="#">
+                    Plus d'information sur ce cas
+                </a>
+
+                <div class="h-divider mt-2"></div>
+
+                <ul class="list-group font-weight-bold mt-2 overflow-auto p-1">
+                    <li class="list-group-item text-center rounded mb-1 pb-0 border">
+                        <time datetime="" class="text-danger">17 mars 2019</time>
+                        <p class="text-secondary">Identification du patient zero</p>
+                    </li>
+                    <li class="list-group-item text-center rounded mb-1 pb-0 border">
+                        <time datetime="" class="text-danger">17 mars 2019</time>
+                        <p class="text-secondary">Identification du patient zero</p>
+                    </li>
+                    <li class="list-group-item text-center rounded mb-1 pb-0 border">
+                        <time datetime="" class="text-danger">17 mars 2019</time>
+                        <p class="text-secondary">Identification du patient zero</p>
+                    </li>
+                    <li class="list-group-item text-center rounded mb-1 pb-0 border">
+                        <time datetime="" class="text-danger">17 mars 2019</time>
+                        <p class="text-secondary">Identification du patient zero</p>
+                    </li>
+                    <li class="list-group-item text-center rounded mb-1 pb-0 border">
+                        <time datetime="" class="text-danger">17 mars 2019</time>
+                        <p class="text-secondary">Identification du patient zero</p>
+                    </li>
+                    <li class="list-group-item text-center rounded mb-1 pb-0 border">
+                        <time datetime="" class="text-danger">17 mars 2019</time>
+                        <p class="text-secondary">Identification du patient zero</p>
+                    </li>
+                    <li class="list-group-item text-center rounded mb-1 pb-0 border">
+                        <time datetime="" class="text-danger">17 mars 2019</time>
+                        <p class="text-secondary">Identification du patient zero</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <section class="local-article">
+            <h2 class="h3 mb-4 font-weight-bold">Actualites sur le covid-19</h2>
+            <div class="d-flex justify-content-between">
+                <div class="card w-25">
+                    <img src="assets/img/images.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title">
+                          <h3 class="h5 text-danger font-weight-bold">Mesure de prevention Covid-19</h3>
+                          <h4 class="h6 font-weight-bold">Conseil des ministre special covid-19</h4>
+                        </div>
+                        <p class="card-text text-padding">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card w-25">
+                    <img src="assets/img/images.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title">
+                          <h3 class="h5 text-danger font-weight-bold">Mesure de prevention Covid-19</h3>
+                          <h4 class="h6 font-weight-bold">Conseil des ministre special covid-19</h4>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card w-25">
+                    <img src="assets/img/images.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title">
+                          <h3 class="h5 text-danger font-weight-bold">Mesure de prevention Covid-19</h3>
+                          <h4 class="h6 font-weight-bold">Conseil des ministre special covid-19</h4>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game mt-5 mb-4">
+            <div class="banner-game container">
+                <img src="assets/img/airtel.png" class="w-100" alt="">
+            </div>
+            <h2 class="font-weight-bold text-center h4 mt-5">Jouer en famille et resserrer les liens avec vos proches</h2>
+            <p class="text-center text-secondary">Choisissez un jeu et gagner de nombreux lots</p>
+            <div class="d-flex container justify-content-around">
+                <div class="game-content w-50">
+                    <div class="game-wrapper row mb-2">
+                        <div class="col-md-8">
+                            <div class="game-card card text-white">
+                                <img src="assets/img/mots_meles.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay bg-darken d-flex flex-column justify-content-end">
+                                  <h5 class="card-title font-weight-bold">Jeu des mots meles</h5>
+                                  <p class="card-text">Participer aux jeux meles du Covid-19</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column justify-content-between">
+
+                            <div class="game-card card text-white">
+                                <img src="assets/img/scrabble.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay bg-darken d-flex flex-column justify-content-end">
+                                  <h5 class="card-title font-weight-bold">Des syllabes avec Covid</h5>
+                                  <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                            <div class="game-card card text-white">
+                                <img src="assets/img/jeu-de-mot.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay bg-darken d-flex flex-column justify-content-end">
+                                  <h5 class="card-title font-weight-bold">Jeu de mots</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="covid-info mt-5">
+                        <h2 class="text-secondary h5"><strong class="font-weight-bold text-dark">La Doc</strong> ~ Decouvrer l'actualite au gabon</h2>
+                        <div class="card mb-3 border-left-0 border-right-0">
+                            <iframe class="card-img-top" height="400px" src="https://www.youtube.com/embed/ozvrHrjhW0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between align-items-end">
+                                  <h2 class="font-weight-bold">Le Covid n'existe pas</h2>
+                                  <p class="small text-secondary">
+                                      <span>101 vues</span>
+                                      <span>25, mars 2018</span>
+                                  </p>
+                                </div>
+                              <div class="card-text d-flex justify-content-between">
+                                <div class="banner-icons">
+                                    <i class="fab fa-facebook mr-2 text-primary font-size-md"></i>
+                                    <i class="fab fa-whatsapp mr-2 font-size-md text-success"></i>
+                                    <i class="fa fa-share-alt font-size-md" aria-hidden="true"></i>
+                                </div>
+                                <div class="banner-valuation font-weight-bold">
+                                    <span>25 <i class="fa fa-share-square-o" aria-hidden="true"></i></span>
+                                    <span>115 likes</span>
+                                    <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-ranking w-25">
+                    <h3 class="h6 text-center text-danger font-weight-bold border py-2 rounded">Classement des joueurs</h3>
+                    <div class="bg-danger p-1">
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item active">jeu 1</li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold"> 1.Dynamo</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold ">2.Rebecca</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold"> 3.Launa</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item bg-success text-white text-white font-weight-bold">jeu 2</li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold"> 1.Dynamo</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold ">2.Rebecca</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold"> 3.Launa</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="list-group">
+                            <li class="list-group-item color text-white font-weight-bold">jeu 3</li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold"> 1.Dynamo</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold ">2.Rebecca</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="assets/img/profil.jpg" height="45px" width="45px" class="align-self-center mr-3 rounded-circle img" alt="...">
+                                    <div class="media-body d-flex align-items-center">
+                                      <p class="font-weight-bold"> 3.Launa</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="extern-article mt-5">
+            <h2 class="h3 mb-4 font-weight-bold">Actualites sur l'exterieur</h2>
+            <div class="row">
+                <div class="col-md-8 border-right">
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="assets/img/images.jpeg" class="card-img rounded-0 photo" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="card-title d-flex justify-content-between">
+                                        <div class="heading">
+                                            <h3 class="h5 text-danger font-weight-bold">Mesure de prevention Covid-19</h3>
+                                            <h4 class="h6 font-weight-bold">Conseil des ministre special covid-19</h4>
+                                        </div>
+                                        <a href="#" class="text-dark icone"><i class="fas fa-ellipsis-v"></i></i></a>
+                                    </div>
+
+                                    <p class="card-text text-secondary text-left text-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit quisquam hic aut sed neque in illo adipisci nobis minus amet iusto odio nihil nesciunt voluptates nostrum vel, optio iure.</p>
+
+                                    <div class="card-text d-flex justify-content-between">
+                                        <a href="#" class="font-weight-bold h5">Lire l'article</a>
+                                        <p class=marge><span class="mr-3">60 <i class="fas fa-book-open"></i></span><time>28,mars 2019</time></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="assets/img/images.jpeg" class="card-img rounded-0 photo" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="card-title d-flex justify-content-between">
+                                        <div class="heading">
+                                            <h3 class="h5 text-danger font-weight-bold">Mesure de prevention Covid-19</h3>
+                                            <h4 class="h6 font-weight-bold">Conseil des ministre special covid-19</h4>
+                                        </div>
+                                        <a href="#" class="text-dark icone"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                    </div>
+
+                                    <p class="card-text text-secondary text-left text-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit quisquam hic aut sed neque in illo adipisci nobis minus amet iusto odio nihil nesciunt voluptates nostrum vel, optio iure.</p>
+
+                                    <div class="card-text d-flex justify-content-between">
+                                        <a href="#" class="font-weight-bold h5">Lire l'article</a>
+                                        <p class=marge><span class="mr-3">60 <i class="fas fa-book-open"></i></span><time>28,mars 2019</time></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="assets/img/images.jpeg" class="card-img rounded-0 photo" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="card-title d-flex justify-content-between">
+                                        <div class="heading">
+                                            <h3 class="h5 text-danger font-weight-bold">Mesure de prevention Covid-19</h3>
+                                            <h4 class="h6 font-weight-bold">Conseil des ministre special covid-19</h4>
+                                        </div>
+                                        <a href="#" class="text-dark icone"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                    </div>
+
+                                    <p class="card-text text-secondary text-left text-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit quisquam hic aut sed neque in illo adipisci nobis minus amet iusto odio nihil nesciunt voluptates nostrum vel, optio iure.</p>
+
+                                    <div class="card-text d-flex justify-content-between">
+                                        <a href="#" class="font-weight-bold h5">Lire l'article</a>
+                                        <p class=marge><span class="mr-3">60 <i class="fas fa-book-open"></i></span><time>28,mars 2019</time></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h6 text-center text-danger font-weight-bold border py-2 rounded">Fakes news</h3>
+                    <div class="media p-1 bg-gray rounded mb-3">
+                        <img src="assets/img/img01.jpeg" class="mr-3 p-1" width="150px" height="100px" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 font-weight-bold">Le nescafe soigne le corona</h5>
+                            <p class="text-right">
+                                <a href="#" class="text-dark"><i class="fas fa-ellipsis-v mr-3"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="media p-1 bg-gray rounded mb-3">
+                        <img src="assets/img/img02.jpeg" class="mr-3 p-1" width="150px" height="100px" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 font-weight-bold">Le nescafe soigne le corona</h5>
+                            <p class="text-right">
+                                <a href="#" class="text-dark"><i class="fas fa-ellipsis-v mr-3"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="media p-1 bg-gray rounded mb-5">
+                        <img src="assets/img/scrabble.jpg" class="mr-3 p-1" width="150px" height="100px" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 font-weight-bold">Le nescafe soigne le corona</h5>
+                            <p class="text-right">
+                                <a href="#" class="text-dark"><i class="fas fa-ellipsis-v mr-3"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="newsletter mt-5">
+                        <h2 class="h3 mb-3 font-weight-bold text-center" >Newsletter</h2>
+                        <form class="form-inline ml-4">
+                            <input class="form-control mr-sm-2" type="email" placeholder="example@gmail.com" aria-label="example@gmail.com">
+                            <button class="btn btn-danger font-weight-bold my-2 my-sm-0" type="submit">S'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+        <div class="container-fluid footer">
+            
+            <p> Ecole241 &copy 2020</p>
+          </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

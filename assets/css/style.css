@@ -1,0 +1,108 @@
+/* Classes utilitaires */
+
+.container{
+    max-width: 95vw;
+    margin: auto;
+}
+
+.font-size-1{
+    font-size: 1.2em;
+}
+
+.font-size-md{
+    font-size: 1.5em;
+}
+
+.font-size-2{
+    font-size: 2em;
+}
+
+.bg-gray{
+    background-color: #e4e0e0da;
+}
+
+.h-divider{
+    width: 40%;
+    margin: auto;
+    height: 2px;
+    background-color: #808080;
+}
+/* ======= Navbar ================ */
+.bg-darken{
+    background:linear-gradient(to bottom,#00000080,#000000ab) !important;
+}
+
+.navbar{
+    padding: 0;
+    height: 14vh;
+}
+
+.navbar-brand{
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+
+nav form.form-inline input::placeholder{
+    color: #dddadacc;
+}
+
+/* ================ Banner  =================== */
+
+.banner-stats ul{
+    height: 50vh;
+}
+
+.banner-stats  ul::-webkit-scrollbar-track{
+    border-radius: 40px;
+}
+
+.banner-stats  ul::-webkit-scrollbar-thumb{
+    border-radius: 40px;
+}
+
+.box{
+    width: 320px;
+    height: 120px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.box > p:first-child{
+    font-size:2.1em;
+    font-weight: 600;
+}
+
+.extern-article .media img{
+    object-fit: cover;
+}
+/* ================ Pour les statistiques  =================== */
+.color{
+    background-color: #ffa500;
+}
+
+/* ============== Articles =============== */
+.text-padding{
+    padding-right: 150px;
+}
+.marge,.icone{
+    margin-right: 30px;
+}
+.photo{
+    height: 100%;
+}
+/* .local-article > .d-flex > div{
+    width: 20%;
+} */
+/* ============== footer =============== */
+.footer{
+    border: 1px solid transparent;
+    background: lightgray;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
